@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		161CC4A21E19F09A0011313D /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161CC4A11E19F09A0011313D /* Helper.swift */; };
+		165181681E08BC1900FC1E38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165181671E08BC1900FC1E38 /* AppDelegate.swift */; };
+		1651816A1E08BC1900FC1E38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165181691E08BC1900FC1E38 /* ViewController.swift */; };
+		1651816D1E08BC1900FC1E38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1651816B1E08BC1900FC1E38 /* Main.storyboard */; };
+		1651816F1E08BC1900FC1E38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1651816E1E08BC1900FC1E38 /* Assets.xcassets */; };
+		165181721E08BC1900FC1E38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 165181701E08BC1900FC1E38 /* LaunchScreen.storyboard */; };
+		1651817A1E08BC3400FC1E38 /* MIDI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 165181791E08BC3400FC1E38 /* MIDI.swift */; };
+		168EFAC31E0EEA6E0057009D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 168EFAC21E0EEA6E0057009D /* AVFoundation.framework */; };
+		169A63301E1D7258005C1E46 /* .. in Resources */ = {isa = PBXBuildFile; fileRef = 169A632F1E1D7258005C1E46 /* .. */; };
+		169A63351E1D7270005C1E46 /* 1a.1.mid in Resources */ = {isa = PBXBuildFile; fileRef = 169A63311E1D7270005C1E46 /* 1a.1.mid */; };
+		169A63361E1D7270005C1E46 /* 1a.2.mid in Resources */ = {isa = PBXBuildFile; fileRef = 169A63321E1D7270005C1E46 /* 1a.2.mid */; };
+		169A63371E1D7270005C1E46 /* 1a.3.mid in Resources */ = {isa = PBXBuildFile; fileRef = 169A63331E1D7270005C1E46 /* 1a.3.mid */; };
+		169A63381E1D7270005C1E46 /* 1a.4.mid in Resources */ = {isa = PBXBuildFile; fileRef = 169A63341E1D7270005C1E46 /* 1a.4.mid */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		161CC4A11E19F09A0011313D /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		165181641E08BC1900FC1E38 /* SwiftMIDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftMIDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		165181671E08BC1900FC1E38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		165181691E08BC1900FC1E38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1651816C1E08BC1900FC1E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1651816E1E08BC1900FC1E38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		165181711E08BC1900FC1E38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		165181731E08BC1900FC1E38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		165181791E08BC3400FC1E38 /* MIDI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIDI.swift; sourceTree = "<group>"; };
+		168EFAC21E0EEA6E0057009D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		169A632F1E1D7258005C1E46 /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
+		169A63311E1D7270005C1E46 /* 1a.1.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = 1a.1.mid; path = ../1a.1.mid; sourceTree = "<group>"; };
+		169A63321E1D7270005C1E46 /* 1a.2.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = 1a.2.mid; path = ../1a.2.mid; sourceTree = "<group>"; };
+		169A63331E1D7270005C1E46 /* 1a.3.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = 1a.3.mid; path = ../1a.3.mid; sourceTree = "<group>"; };
+		169A63341E1D7270005C1E46 /* 1a.4.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; name = 1a.4.mid; path = ../1a.4.mid; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		165181611E08BC1900FC1E38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168EFAC31E0EEA6E0057009D /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1651815B1E08BC1900FC1E38 = {
+			isa = PBXGroup;
+			children = (
+				165181661E08BC1900FC1E38 /* SwiftMIDI */,
+				165181651E08BC1900FC1E38 /* Products */,
+				168EFAC11E0EEA6E0057009D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		165181651E08BC1900FC1E38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				165181641E08BC1900FC1E38 /* SwiftMIDI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		165181661E08BC1900FC1E38 /* SwiftMIDI */ = {
+			isa = PBXGroup;
+			children = (
+				165181671E08BC1900FC1E38 /* AppDelegate.swift */,
+				165181691E08BC1900FC1E38 /* ViewController.swift */,
+				1651816B1E08BC1900FC1E38 /* Main.storyboard */,
+				1651816E1E08BC1900FC1E38 /* Assets.xcassets */,
+				165181701E08BC1900FC1E38 /* LaunchScreen.storyboard */,
+				165181731E08BC1900FC1E38 /* Info.plist */,
+				165181791E08BC3400FC1E38 /* MIDI.swift */,
+				161CC4A11E19F09A0011313D /* Helper.swift */,
+				169A632F1E1D7258005C1E46 /* .. */,
+				169A63311E1D7270005C1E46 /* 1a.1.mid */,
+				169A63321E1D7270005C1E46 /* 1a.2.mid */,
+				169A63331E1D7270005C1E46 /* 1a.3.mid */,
+				169A63341E1D7270005C1E46 /* 1a.4.mid */,
+			);
+			path = SwiftMIDI;
+			sourceTree = "<group>";
+		};
+		168EFAC11E0EEA6E0057009D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				168EFAC21E0EEA6E0057009D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		165181631E08BC1900FC1E38 /* SwiftMIDI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 165181761E08BC1900FC1E38 /* Build configuration list for PBXNativeTarget "SwiftMIDI" */;
+			buildPhases = (
+				165181601E08BC1900FC1E38 /* Sources */,
+				165181611E08BC1900FC1E38 /* Frameworks */,
+				165181621E08BC1900FC1E38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftMIDI;
+			productName = SwiftMIDI;
+			productReference = 165181641E08BC1900FC1E38 /* SwiftMIDI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1651815C1E08BC1900FC1E38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Jadar;
+				TargetAttributes = {
+					165181631E08BC1900FC1E38 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = LDTZMHXGDK;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1651815F1E08BC1900FC1E38 /* Build configuration list for PBXProject "SwiftMIDI" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1651815B1E08BC1900FC1E38;
+			productRefGroup = 165181651E08BC1900FC1E38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				165181631E08BC1900FC1E38 /* SwiftMIDI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		165181621E08BC1900FC1E38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169A63301E1D7258005C1E46 /* .. in Resources */,
+				165181721E08BC1900FC1E38 /* LaunchScreen.storyboard in Resources */,
+				169A63351E1D7270005C1E46 /* 1a.1.mid in Resources */,
+				1651816F1E08BC1900FC1E38 /* Assets.xcassets in Resources */,
+				169A63381E1D7270005C1E46 /* 1a.4.mid in Resources */,
+				169A63361E1D7270005C1E46 /* 1a.2.mid in Resources */,
+				1651816D1E08BC1900FC1E38 /* Main.storyboard in Resources */,
+				169A63371E1D7270005C1E46 /* 1a.3.mid in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		165181601E08BC1900FC1E38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1651816A1E08BC1900FC1E38 /* ViewController.swift in Sources */,
+				161CC4A21E19F09A0011313D /* Helper.swift in Sources */,
+				165181681E08BC1900FC1E38 /* AppDelegate.swift in Sources */,
+				1651817A1E08BC3400FC1E38 /* MIDI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1651816B1E08BC1900FC1E38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1651816C1E08BC1900FC1E38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		165181701E08BC1900FC1E38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				165181711E08BC1900FC1E38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		165181741E08BC1900FC1E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		165181751E08BC1900FC1E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		165181771E08BC1900FC1E38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LDTZMHXGDK;
+				INFOPLIST_FILE = SwiftMIDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jadar.SwiftMIDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		165181781E08BC1900FC1E38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = LDTZMHXGDK;
+				INFOPLIST_FILE = SwiftMIDI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.jadar.SwiftMIDI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1651815F1E08BC1900FC1E38 /* Build configuration list for PBXProject "SwiftMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165181741E08BC1900FC1E38 /* Debug */,
+				165181751E08BC1900FC1E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		165181761E08BC1900FC1E38 /* Build configuration list for PBXNativeTarget "SwiftMIDI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				165181771E08BC1900FC1E38 /* Debug */,
+				165181781E08BC1900FC1E38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1651815C1E08BC1900FC1E38 /* Project object */;
+}
